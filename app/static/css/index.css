@@ -1,0 +1,56 @@
+html,
+body {
+  height: 96%;
+  background-color: #66CCCC;
+  margin: 0px;
+  padding: 0px;
+}
+.box {
+  background-color: white;
+  height: 15%;
+  border: 1px solid black;
+  margin: 4.16vh 10%;
+}
+.box.rounded {
+  border-radius: 15px;
+}
+.box .content {
+  position: relative;
+  top: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.header .content,
+.footer .content {
+  color: red;
+}
+@media (min-width: 1240px) {
+  .nav,
+  .page-body,
+  .side-panel {
+    float: left;
+  }
+  .nav {
+    height: 54%;
+    width: 10%;
+    display: inline-block;
+    margin-right: 4.75%;
+  }
+  .page-body {
+    height: 54%;
+    width: 40%;
+    display: inline-block;
+    margin-left: 4.75%;
+    margin-right: 4.75%;
+  }
+  .side-panel {
+    height: 20%;
+    float: left;
+    width: 10%;
+    display: inline-block;
+    margin-left: 4.75%;
+  }
+  .footer {
+    clear: both;
+  }
+}

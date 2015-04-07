@@ -1,0 +1,26 @@
+html {
+    font-family: 'PressStart2P', cursive;
+}
+
+@font-face {
+  font-family: "PressStart2P";
+  src: url(../fonts/PressStart2P.ttf) format("truetype");
+}
+
+#canvas {
+    background-color: black;
+    display: block;
+    margin: 0 auto;
+}
+#scoreBoardField, #livesField {
+    display: inline-block;
+}
+.game-info-container {
+    margin: 0px auto;
+    text-align: center;
+}
+.game-info {
+    display: inline-block;
+    font-size: 2vw;
+    height: auto;
+}

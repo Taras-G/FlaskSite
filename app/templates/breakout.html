@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Breakout</title>
+        <link href="static/css/breakout.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="game-info-container">
+            <div class="game-info">Score:
+                <div id="scoreBoardField">0</div>
+            </div>
+            <div class="game-info">Lives:
+                <div id="livesField">3</div>
+            </div>
+            <form class="form-inline" style="display: none" id="submit-field", method="post", action="/submit">
+            <input type="text", name="id" class="input" placeholder="Enter Your Initials Here" required pattern="[A-Za-z]{1,3}"/>
+            <input type="hidden" class="input" id="final-score" name="score" value="0"/>
+            <span class="help-inline">Submit Your Score!</span>
+            </form>
+        </div>
+        <canvas id="canvas" width="600" height="550"></canvas>
+        <script src="/static/js/breakout.js"> </script>
+    </body>
+</html>

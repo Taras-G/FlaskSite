@@ -1,0 +1,6 @@
+nose
+requests
+mock
+Flask
+SQLAlchemy
+Flask-SQLAlchemy

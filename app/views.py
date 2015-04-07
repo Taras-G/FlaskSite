@@ -24,7 +24,7 @@ def scores():
 
 @app.route('/submit', methods=['POST'])
 def submit():
-    score = models.Score(id=request.form['id'], score=request.form['score'])
+    score = models.Score(initials=request.form['initials'], score=request.form['score'])
     db.session.add(score)
     db.session.commit()
     entries = models.Score.query.all()

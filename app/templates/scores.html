@@ -12,14 +12,14 @@
   <table class="table table-striped">
   <thead>
         <tr>
-            <th>Name</th>
+            <th>Initials</th>
             <th>Score</th>
         </tr>
     </thead>
     <tbody>
     {% for entry in entries %}
         <tr>
-            <td>{{ entry.id }}</td>
+            <td>{{ entry.initials }}</td>
             <td>{{ entry.score }}</td>
         </tr>
     {% endfor %}
